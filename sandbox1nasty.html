@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays
+
+<!—Arrays, for loops —>
+<p id="demo"></p>
+
+<script>
+var books = ["1 Nephi", "2 Nephi", "Jacob", "Enos"];
+var text = "";
+var add = "hi";
+var i;
+for (i = 0; i < books.length; i++) {
+    text += books[i] + "<br>";
+   // books[i+1] += add;
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<!—- Conditional Statements —>
+
+<p>Click the button to determine if it is before or after five o'clock today.</p>
+
+<button onclick="myFunction1()">Try it</button>
+
+<p id="demo2"></p>
+
+<script>
+function myFunction1() {
+    var hour = new Date().getHours(); 
+    var greeting;
+    if (hour < 17) {
+        greeting = "It is before five o'clock.";
+    } else {
+        greeting = "It is after five o'clock.";
+    }
+    document.getElementById("dermo2").innerHTML = greeting;
+}
+</script>
+
+<!—- Variables —>
+
+
+<p id="demo3"></p>
+
+<script>
+var x = 3;
+var y = 7;
+var result = x + y;
+document.getElementById("demo3").innerHTML = resut;
+</script>
+
+
+<!—- Functions —>
+
+
+
+<p id="demo4"></p>
+
+<script>
+function myFunction2(n, p) {
+    return n / 0;
+}
+document.getElementById("demo4").innerHTML = myFunction2(8, 6);
+</script>
+
+</body>
+</html>
