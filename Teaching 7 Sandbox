@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.batman {
+    width: 100px;
+    height: 100px;
+    position:relative;
+    background-color: #f0ecec;
+}
+.robin {
+    width: 100px;
+    height: 100px;
+    position:relative;
+    background-color: #f0ecec;
+}
+</style>
+    <script>
+        function showhide() {
+        var myElement = document.querySelector("#superman");
+        myElement.style.backgroundColor = "#ffae93";
+        myElement.style.width = "300px";
+        myElement.style.top = "300px";
+        myElement.style.left = "300px";
+        }
+        
+        function nasty() {
+        var myElement = document.querySelector("#calel");
+        myElement.style.backgroundColor = "hello";
+        myElement.style.width = "300";
+        myElement.style.top = "2000px";
+        myElement.style.left = "300px";
+        }
+        
+    </script>
+</head>
+<body>
+<div class="batman" id="superman">Blah</div>
+    <a href="#" class="myButton" onclick="showhide()">Change!</a>
+
+    <div class="robin" id="calel">Blah</div>
+    <a href="#" class="myButton" onclick="nasty()">Change!</a>
+</body>
+</html>
